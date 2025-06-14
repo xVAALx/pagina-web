@@ -18,7 +18,7 @@ def index() -> rx.Component:
                 header(),
                 links("YouTube", "https://www.youtube.com/@valentinavila629", "iconos/youtube.svg"),
                 links("Proyectos", "/repo", "iconos/project.svg"),
-                links("Discord", "/2", "iconos/discord.svg"),
+                links("Discord", "https://discord.gg/X7nPD8HKPZ", "iconos/discord.svg"),
                 links("GitHub", "https://github.com/xVAALx", "iconos/github.svg"),
                 max_width="600px",
                 width="100%",
