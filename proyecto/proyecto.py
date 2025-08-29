@@ -1,10 +1,10 @@
 import reflex as rx
 from proyecto.components.navbar import navbar
-from proyecto.components.canvas import canvas
 from proyecto.components.header import header
 from proyecto.components.botones import links
 from proyecto.components.footer import footer
 from proyecto.repo import repo
+from proyecto.components.canvas import canvas
 
 
 
@@ -16,10 +16,10 @@ def index() -> rx.Component:
         rx.center(
             rx.vstack(
                 header(),
-                links("YouTube", "https://www.youtube.com/@valentinavila629", "iconos/youtube.svg"),
-                links("Proyectos", "/repo", "iconos/project.svg"),
-                links("Discord", "https://discord.gg/X7nPD8HKPZ", "iconos/discord.svg"),
-                links("GitHub", "https://github.com/xVAALx", "iconos/github.svg"),
+                links("YouTube", "https://www.youtube.com/@valentinavila629", "/iconos/youtube.svg", True),
+                links("Proyectos", "/repo", "iconos/project.svg", False),
+                links("Discord", "https://discord.gg/X7nPD8HKPZ", "/iconos/discord.svg", True),
+                links("GitHub", "https://github.com/xVAALx", "/iconos/github.svg", True),
                 max_width="600px",
                 width="100%",
                 align="center",

@@ -1,7 +1,7 @@
 import reflex as rx
 
 
-def links(text: str, url: str , image: str) -> rx.Component:
+def links(text: str, url: str , image: str, is_external: bool) -> rx.Component:
     return rx.link(
         rx.button(
             rx.hstack(
@@ -30,7 +30,7 @@ def links(text: str, url: str , image: str) -> rx.Component:
         width="250px",          # El link también tiene el mismo ancho
         height="48px",          # El link también tiene el mismo alto
         href=url,
-        is_external=True,
+        is_external=is_external,
         text_decoration="none",
         background_color="#FFFFFF00",
         border_radius="none",

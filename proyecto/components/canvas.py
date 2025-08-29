@@ -1,4 +1,4 @@
-import reflex as rx 
+import reflex as rx
 
 def canvas() -> rx.Component:
     return rx.box(
@@ -19,4 +19,4 @@ def canvas() -> rx.Component:
             }
         ),
         rx.script(src="/matrix.js"),
-    )
+    ) 

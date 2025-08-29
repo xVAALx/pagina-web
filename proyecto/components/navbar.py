@@ -1,22 +1,27 @@
 import reflex as rx
 
-def navbar(image: str) -> rx.Component:
+def navbar(imagen: str) -> rx.Component:
     return rx.hstack(
         rx.box(
+            rx.link(
         rx.el.span(
                 rx.image(
-                src=image,
+                src=imagen,
                 height="40px",
             ),
             ),
-        rx.el.span("              "),
-        rx.el.span("x", color="green"),
-        rx.el.span("VAAL", color="white"),
-        rx.el.span("x", color="green"),
-        font_family="Bebas-Neue",
-        font_weight="medium",
-        font_size="50px",
-        width="100%",
+            rx.el.span("              "),
+            rx.el.span("x", color="green"),
+            rx.el.span("VAAL", color="white"),
+            rx.el.span("x", color="green"),
+            font_family="Bebas-Neue",
+            font_weight="medium",
+            font_size="50px",
+            width="100%",
+            text_decoration="none",
+            href="/",
+            ),
+            width="100%",
         ),
         rx.text(
             font_size="25px",

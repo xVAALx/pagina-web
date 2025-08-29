@@ -1,4 +1,11 @@
 import reflex as rx
+from proyecto.components.navbar import navbar
+
 
 def repo():
-    return rx.text("Esta es la página repo")
+    return rx.box(
+            navbar("/iconos/ybcde.svg"),
+                    rx.vstack(
+                        
+                        ),
+),
