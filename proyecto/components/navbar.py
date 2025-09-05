@@ -34,7 +34,7 @@ def navbar(imagen: str) -> rx.Component:
         width="100vw",
         background="#2C282842",
         position="sticky",
-        z_index="999",
+        z_index="1000",
         padding_x="20px",
         padding_y="20px",
         style={"backdrop_filter": "blur(2px)"},
