@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://xvaalx.github.io/pagina-web/
+
+# Sitemaps
+Sitemap: https://xvaalx.github.io/pagina-web/sitemap.xml
